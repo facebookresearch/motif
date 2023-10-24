@@ -5,8 +5,9 @@ This repository contains PyTorch code for Motif, training AI agents on NetHack w
 
 by [Martin Klissarov](https://mklissa.github.io/)* & [Pierluca D'Oro](https://proceduralia.github.io/)*, [Shagun Sodhani](https://shagunsodhani.com/), [Roberta Raileanu](https://rraileanu.github.io/), [Pierre-Luc Bacon](https://pierrelucbacon.com/), [Pascal Vincent](https://mila.quebec/en/person/pascal-vincent/), [Amy Zhang](https://amyzhang.github.io/) and  [Mikael Henaff](https://www.mikaelhenaff.com/)
 
+
 <p align="center">
-    <img src="https://github.com/fairinternal/llm_to_reward/assets/15056362/985bfece-5b01-425b-93ae-cef213ba49d8" alt="motif">
+    <img src="https://github.com/facebookresearch/motif/assets/15056362/2d92344e-7ea8-4c2d-ac70-456077ac0aab" alt="motif">
 </p>
 
 Motif elicits the preferences of a Large Language Model (LLM) on pairs of captioned observations from a dataset of interactions collected on NetHack. Automatically, it distills the LLM's common sense into a reward function that is used to train agents with reinforcement learning.
@@ -21,17 +22,17 @@ As illustrated in the following figure, Motif features three phases:
 We detail each of the phases by providing the necessary datasets, commands and raw results to reproduce the experiments in the paper.
 
 <p align="center">
-    <img src="https://github.com/fairinternal/llm_to_reward/assets/22938475/7737d644-8e88-4334-abc2-daa41cbd0dc7" alt="motif">
+    <img src="https://github.com/facebookresearch/motif/assets/15056362/297e16c5-fcd3-42ef-b686-b383b0ec56b3" alt="motif">
 </p>
 
 We evaluate Motif's performance on the challenging, open-ended and procedurally generated NetHack game through the [NetHack Learning Environment](https://github.com/facebookresearch/nle). We investigate how Motif mostly generates intuitive human-aligned behaviors, which can be steered easily through prompt modifications, as well as its scaling properties.
 
 <p align="center">
-    <img src="https://github.com/fairinternal/llm_to_reward/assets/22938475/be47e0cf-ee4f-42cf-b040-26389d102213" alt="motif">
+    <img src="https://github.com/facebookresearch/motif/assets/15056362/1b93c85d-5c99-446a-b8a0-6e6e2b60328e" alt="motif">
 </p>
 
 <p align="center">
-    <img src="https://github.com/fairinternal/llm_to_reward/assets/22938475/5f5cbac3-cb06-4438-8cbe-fef6f6ef4b78" alt="motif">
+    <img src="https://github.com/facebookresearch/motif/assets/15056362/91e683d4-819f-404b-8983-a567e2dc833a" alt="motif">
 </p>
 
 To install the required dependencies for the whole pipeline, simply run `pip install -r requirements.txt`.
