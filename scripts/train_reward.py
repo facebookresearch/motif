@@ -14,7 +14,7 @@ import torch
 import torch.nn as nn
 from torchvision import transforms
 
-from dataset import flatten_pair_collate_fn, PairsDataset
+from rlaif.dataset import flatten_pair_collate_fn, PairsDataset
 from rlaif.reward_model import create_reward_model, RunningMeanStd
 from sample_factory.algorithms.appo.learner import LearnerWorker
 from sample_factory.algorithms.utils.arguments import (arg_parser, parse_args, 
