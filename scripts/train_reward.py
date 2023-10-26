@@ -14,7 +14,7 @@ import torch
 import torch.nn as nn
 from torchvision import transforms
 
-from dataset import flatten_pair_collate_fn, PairsDataset
+from rlaif.dataset import flatten_pair_collate_fn, PairsDataset
 from rlaif.reward_model import create_reward_model, RunningMeanStd
 from sample_factory.algorithms.appo.learner import LearnerWorker
 from sample_factory.algorithms.utils.arguments import (arg_parser, parse_args, 
@@ -256,11 +256,6 @@ def train_reward(cfg):
             cur_acc = train_acc / (i+1)
 
             num_iter += 1
-
-            log.info(f'\n Cur loss: {loss.item():.3f} '
-                     f'Cur acc: {cur_acc:.3f} It: {num_iter}')
-            log.info(f'\n Reward mean: {reward_rms.mean[0]:.3f} '
-                     f'Reward variance: {reward_rms.var[0]:.3f}')
 
         train_met.total_train_loss.append(train_loss / len(train_loader))
         train_met.total_train_acc.append(train_acc / len(train_loader))
