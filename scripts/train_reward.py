@@ -257,11 +257,6 @@ def train_reward(cfg):
 
             num_iter += 1
 
-            log.info(f'\n Cur loss: {loss.item():.3f} '
-                     f'Cur acc: {cur_acc:.3f} It: {num_iter}')
-            log.info(f'\n Reward mean: {reward_rms.mean[0]:.3f} '
-                     f'Reward variance: {reward_rms.var[0]:.3f}')
-
         train_met.total_train_loss.append(train_loss / len(train_loader))
         train_met.total_train_acc.append(train_acc / len(train_loader))
         train_met.epoch.append(epoch)
