@@ -279,7 +279,7 @@ class LearnerWorker:
         self.exploration_loss_func = None  # deferred initialization
 
         try:
-            reward_csv_file = f'{cfg.reward_dir}/train_norm_quantiles.csv'
+            reward_csv_file = f'{cfg.reward_dir}/reward_metrics/train_norm_quantiles.csv'
             with open(reward_csv_file, 'r', newline='') as file:
                 csv_reader = csv.reader(file)
                 reward_quantile_info = list(csv_reader)
