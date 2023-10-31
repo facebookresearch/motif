@@ -125,6 +125,12 @@ Additionally, if you want to train agents just using the intrinsic reward coming
 | staircase (level 3) - intrinsic only | `NetHackStaircaseLvl3Continual-v1` |
 | staircase (level 4) - intrinsic only| `NetHackStaircaseLvl4Continual-v1` |
 
+## Visualize your RL agent
+We additionally provide a script for visualizing your trained RL agents. This can provide important insights into its behaviour, but also will generated the top messages for each episode, which can help understanding what it is trying to optimize for. You simply need to run the following command.
+```
+python -m scripts.visualize --train_dir train_dir/rl_saving_dir --experiment standard_motif
+```
+
 ## Citation
 If you build on our work or find it useful, please cite it using the following bibtex.
 
