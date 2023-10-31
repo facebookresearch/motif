@@ -1,14 +1,12 @@
 import os
 import sys
 import time
-from collections import defaultdict, deque
+from collections import deque
 
 import gym
 import numpy as np
 import scipy
 import torch
-
-from PIL import Image
 
 # Needs to be imported to register models and envs
 import rl_baseline.tasks_nle
