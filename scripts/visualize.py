@@ -213,7 +213,7 @@ def add_extra_params(parser):
     """
     p = parser
     p.add_argument("--sleep", default=0.0, type=float, 
-                   help="Sleeping amount for rendering")
+                   help="Controls the speed at which rendering happens.")
     p.add_argument("--render", default=True, type=str2bool, 
                    help="To render or not the game.")
 
