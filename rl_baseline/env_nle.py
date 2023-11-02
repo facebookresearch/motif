@@ -3,7 +3,6 @@ import gym
 import numpy as np
 
 import nle
-from PIL import Image, ImageFont, ImageDraw
 
 from rl_baseline.obs_wrappers import RenderCharImagesWithNumpyWrapper, MessageWrapper, VectorFeaturesWrapper
 from sample_factory.envs.env_registry import global_env_registry
