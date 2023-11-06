@@ -67,7 +67,7 @@ To create the annotations, we use [vLLM](https://github.com/vllm-project/vllm) a
 The annotation script assumes the dataset will be annotated in different chunks using the `n-annotation-chunks` argument. This allows for a process that can be parallelized depending on the availability of resources, and is robust to restarts/preemption. To run with a single chunk (i.e., to process the entire dataset), and annotate with the default prompt template and task specification, run the following command.
 
 ```
-python -m scripts.annotate_pairs_dataset.py --directory motif_dataset \
+python -m scripts.annotate_pairs_dataset --directory motif_dataset \
                                  --prompt-version default --goal-key defaultgoal \
                                  --n-annotation-chunks 1 --chunk-number 0 \
                                  --llm-size 70 --num-gpus 8
